@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>Himit Web</title>
 </head>
+
 <body>
-    
+
+  <header>
+    <img src="assets/logohimit.png" alt="logo">
+    <button>
+      <svg viewBox="0 0 473 473" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M100.611 254.5C110.337 254.5 118.222 246.217 118.222 236C118.222 225.783 110.337 217.5 100.611 217.5C90.8848 217.5 83 225.783 83 236C83 246.217 90.8848 254.5 100.611 254.5Z"
+          fill="white" />
+        <path
+          d="M383.446 217.5H170C160.857 217.5 153.445 225.286 153.445 234.89V237.11C153.445 246.714 160.857 254.5 170 254.5H383.446C392.589 254.5 400.001 246.714 400.001 237.11V234.89C400.001 225.286 392.589 217.5 383.446 217.5Z"
+          fill="white" />
+        <path
+          d="M383.446 310H99.5544C90.4117 310 83 317.786 83 327.39V329.61C83 339.214 90.4117 347 99.5544 347H383.446C392.588 347 400 339.214 400 329.61V327.39C400 317.786 392.588 310 383.446 310Z"
+          fill="white" />
+        <path
+          d="M383.446 125H99.5544C90.4117 125 83 132.786 83 142.39V144.61C83 154.214 90.4117 162 99.5544 162H383.446C392.588 162 400 154.214 400 144.61V142.39C400 132.786 392.588 125 383.446 125Z"
+          fill="white" />
+        <circle cx="236.5" cy="236.5" r="230" stroke="white" stroke-width="13" />
+      </svg>
+    </button>
+  </header>
+
+  <!--========== BIG BANNER ==========-->
+  <section class="section1">
+    <div id="carouselExampleIndicators" class="carousel slide custom_carousel" data-bs-ride="carousel"
+      data-bs-interval="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/bigbannerlanding.jpg" class="d-block w-100" alt="bigbannerlanding1">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/bigbannerlanding2.jpg" class="d-block w-100" alt="bigbannerlanding2">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/bigbannerlanding3.jpg" class="d-block w-100" alt="bigbannerlanding3">
+        </div>
+      </div>
+      <button class="carousel-control-prev custom_button" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon left_button" aria-hidden="true"></span>
+        <!-- <span class="visually-hidden">Previous</span> -->
+      </button>
+      <button class="carousel-control-next custom_button" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon right_button" aria-hidden="true"></span>
+        <!-- <span class="visually-hidden">Next</span> -->
+      </button>
+    </div>
+
+  </section>
+
+  <!--========== SECTION 2 ==========-->
+  <section class="section2">
+    <div>
+
+      <h1>Apa Itu Himit?</h1>
+      <p>HIMIT adalah singkatan dari “Himpunan Mahasiswa Teknik Informatika”,
+        yang merupakan salah satu ORMAWA (Organisasi Mahasiswa) sekaligus
+        salah satu dari HMJ (Himpunan Mahasiswa Jurusan) yang ada di Politeknik Elektronika Negeri Surabaya atau PENS.
+      </p>
+      <a href="#">Baca Selengkapnya</a>
+    </div>
+    <img src="assets/logohimit.png" alt="logo">
+
+  </section>
+
+  <!--========== SECTION 3 ==========-->
+  <section class="section3">
+    <div>
+      <h1>Departemen HIMIT</h1>
+      <a href="#">Pelajari Lebih lanjut</a>
+    </div>
+    <div>
+      <div>
+        <span>
+          <img src="assets/logodepartemen/inti.png" alt="Badan Inti">
+          <p>Badan Inti</p>
+        </span>
+        <span>
+          <img src="assets/logodepartemen/dagri.png" alt="Dagri" data-title='Dagri'>
+          <p>Dagri</p>
+        </span>
+        <span>
+          <img src="assets/logodepartemen/ristek.png" alt="Ristek" data-title='Ristek'>
+          <p>Ristek</p>
+        </span>
+        <span>
+          <img src="assets/logodepartemen/lugri.png" alt="Lugri" data-title='Lugri'>
+          <p>Lugri</p>
+        </span>
+
+      </div>
+      <div>
+        <span>
+          <img src="assets/logodepartemen/psdm.png" alt="PSDM" data-title='PSDM'>
+          <p>PSDM</p>
+        </span>
+        <span>
+          <img src="assets/logodepartemen/medinfo.png" alt="Medinfo" data-title='Medinfo'>
+          <p>Medinfo</p>
+        </span>
+        <span>
+          <img src="assets/logodepartemen/senor.png" alt="Senor" data-title='Senor'>
+          <p>Senor</p>
+        </span>
+
+      </div>
+    </div>
+  </section>
+
+  <!--========== SECTION 4 ==========-->
+  <section class="section4">
+    <div>
+      <h1>Kabinet AGNIBRATA</h1>
+      <p>
+        Kabinet Agnibrata adalah Kabinet Himpunan Mahasiswa Teknik Informatika 2021
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      </p>
+      <a href="#">Baca Selengkapnya</a>
+    </div>
+    <img src="assets/logoagnibrata.png" alt="logo">
+  </section>
+
+  <!--========== SECTION 5 ==========-->
+  <section class="section5">
+    <div>
+      <h1>Himit Galeri Dokumentasi</h1>
+      <p>
+        Kumpulan dokumentasi event yang telah
+        dilaksanakan oleh HIMIT PENS 2020/2021.
+      </p>
+    </div>
+    <div>
+      <a href="#">lihat galeri dokumentasi lainnya</a>
+    </div>
+
+  </section>
+
+  <!-- Bootstrap JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
