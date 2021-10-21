@@ -86,7 +86,6 @@ header button svg {
 .section2 h1,
 .section3 h1,
 .section4 h1,
-.section5 h1,
 .section6 h1,
 .section7 h1 {
     font-family: "Kanit";
@@ -119,6 +118,7 @@ header button svg {
 .section2 a::after,
 .section3 a::after,
 .section4 a::after,
+.section5 a::after,
 .section6 a::after,
 .section7 a::after {
     --size: 1em;
@@ -235,21 +235,155 @@ header button svg {
     color: #000000;
 }
 
-.section5,
-.section5>div:nth-of-type(2) {
-    display: flex;
-}
-
 .section5 {
     background-image: url("assets/bgsection5.png");
     background-size: cover;
-    flex-direction: column;
     padding: 1em 3em;
+    align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 6em;
+}
+
+.section5>div {
+    width: 100%;
 }
 
 .section5>div:nth-of-type(1) {
     justify-content: space-between;
     align-items: center;
+    margin-top: 4em;
+}
+
+.section5>div:nth-of-type(1) {
+    display: flex;
+}
+
+.section5 p {
+    width: 40ch;
+    margin-left: 3rem;
+    padding-top: 1em;
+    align-items: center;
+    font-family: 'Montserrat';
+    color: #000000;
+}
+
+.section5 h1 {
+    font-family: "Kanit";
+    font-weight: 700;
+    color: #1A237E;
+    margin-top: 2rem;
+}
+
+
+.section6 {
+    background-color: #FDFDEA;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+
+.section6 img {
+    width: 37rem;
+    height: auto;
+    display: flex;
+    margin-right: 500px;
+    margin-top: 100px;
+}
+
+.section6 p {
+    width: 37ch;
+    padding-top: 3rem;
+    font-family: 'Montserrat';
+    color: #000000;
+}
+
+.section7 {
+    background-image: url("assets/bgsection7.png");
+    background-size: cover;
+    padding: 1em 3em;
+    align-items: center;
+    justify-content: center;
+    gap: 6em;
+}
+
+.section7>div {
+    width: 100%;
+}
+
+.section7>div:nth-of-type(1) {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.section7>div:nth-of-type(1) {
+    display: flex;
+}
+
+.section7 p {
+    width: 40ch;
+    margin-left: 3rem;
+    padding-top: 1em;
+    align-items: center;
+    font-family: 'Montserrat';
+    color: #000000;
+}
+
+.section7 h1 {
+    font-family: "Kanit";
+    font-weight: 700;
+    color: #1A237E;
+    margin-top: 2rem;
+}
+
+.articlecard {
+    display: flex;
+    position: absolute;
+    background-color: #C4C4C4;
+    flex-direction: column;
+    box-shadow: 0px 101px 227px rgba(0, 0, 0, 0.37), 0px 42.1954px 94.8352px rgba(0, 0, 0, 0.34578), 0px 22.5597px 50.7034px rgba(0, 0, 0, 0.307725), 0px 12.6468px 28.4239px rgba(0, 0, 0, 0.248669), 0px 6.7166px 15.0957px rgba(0, 0, 0, 0.165059), 0px 2.79493px 6.28167px rgba(0, 0, 0, 0.0747247);
+    border-radius: 20px;
+}
+
+
+.footer {
+    background-color: #F0F0DA;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: .5em 1.7em .5em 1em;
+    align-items: center;
+}
+
+/* About Us Page */
+
+.ausection1 {
+    background-color: #FDFDEA;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+
+.ausection1 img {
+    width: 37rem;
+    height: auto;
+    display: flex;
+    margin-right: 500px;
+    margin-top: 100px;
+}
+
+.ausection1 p {
+    width: 37ch;
+    padding-top: 3rem;
+    font-family: 'Montserrat';
+    color: #000000;
 }
