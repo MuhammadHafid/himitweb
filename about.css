@@ -2,9 +2,9 @@
 
 .section {
   min-height: 100vh;
-  width: 100vw;
   display: flex;
   position: relative;
+  align-items: center;
 }
 
 h1 {
@@ -31,7 +31,6 @@ p {
 
 #sec1 {
   background-color: #1a237e;
-  align-items: center;
   color: white;
 }
 
@@ -51,9 +50,6 @@ p {
 }
 
 /* Section 2 Style */
-#sec2 {
-  align-items: center;
-}
 
 #sec2 .bg-logo {
   position: absolute;
@@ -83,7 +79,54 @@ p {
   margin-bottom: 3rem;
 }
 
-/* Section 4 color */
-#sec4 {
+/* Section 4 styke */
+
+#sec4 svg {
+  height: 50vh;
+  margin-top: 2rem;
+}
+
+/* Section 5 styke */
+
+#sec5 {
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: center;
+}
+
+#sec5 svg {
+  width: 4rem;
+}
+
+#sec5 .carousel-inner {
+  overflow: visible !important;
+}
+
+#sec5 .custom-container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 2rem 15vw 0;
+  height: auto;
+}
+
+#sec5 .custom-card {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem 0;
+  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.17));
+  border-radius: 0.5rem;
+}
+
+#sec5 .custom-card img {
+  height: 8rem;
+}
+
+#sec5 .col-1 {
+  display: flex;
   align-items: center;
 }

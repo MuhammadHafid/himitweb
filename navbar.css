@@ -19,13 +19,13 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 0.5em 1.7em 0.5em 1em;
+  padding: 1rem 2rem;
   align-items: center;
   z-index: 10;
 }
 
 header img {
-  height: 6rem;
+  height: 4rem;
   width: auto;
 }
 
@@ -36,8 +36,7 @@ header button {
 }
 
 header button svg {
-  height: 4rem;
-  width: auto;
+  height: 3rem;
   position: relative;
 }
 
