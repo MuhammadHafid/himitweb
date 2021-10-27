@@ -1,0 +1,89 @@
+/* Global Style */
+
+.section {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  position: relative;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  font-family: "Kanit";
+}
+
+h3 {
+  line-height: unset;
+  font-weight: 600;
+  font-family: "Kanit";
+}
+
+p {
+  font-weight: 500;
+}
+
+.blue {
+  color: #1a237e;
+}
+
+/* Section 1 Style */
+
+#sec1 {
+  background-color: #1a237e;
+  align-items: center;
+  color: white;
+}
+
+#sec1 img {
+  width: 100%;
+}
+
+#sec1 button {
+  background-color: #7e751a;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+#sec1 h3 {
+  margin: 1rem 0 2rem;
+  font-weight: 500;
+}
+
+/* Section 2 Style */
+#sec2 {
+  align-items: center;
+}
+
+#sec2 .bg-logo {
+  position: absolute;
+  z-index: -10;
+  top: 55%;
+  left: 50%;
+  width: 25rem;
+  opacity: 30%;
+  transform: translate(-50%, -50%);
+}
+
+#sec2 h3 {
+  margin-top: 1rem;
+}
+
+/* Section 3 style */
+#sec3 {
+  background-color: #1a237e;
+  color: white;
+  align-items: center;
+}
+#sec3 img {
+  width: 100%;
+}
+
+#sec3 h1 {
+  margin-bottom: 3rem;
+}
+
+/* Section 4 color */
+#sec4 {
+  align-items: center;
+}

@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  font-family: "Montserrat";
+  color: #000000;
+  background-color: #fdfdea;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.5em 1.7em 0.5em 1em;
+  align-items: center;
+  z-index: 10;
+}
+
+header img {
+  height: 6rem;
+  width: auto;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+header button svg {
+  height: 4rem;
+  width: auto;
+  position: relative;
+}
+
+button {
+  all: unset;
+}
