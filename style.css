@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -44,7 +45,9 @@ header button svg {
 .section4,
 .section5,
 .section6,
-.section7 {
+.section7,
+.ausection1,
+.kabisection1 {
     height: 100vh;
     width: 100%;
 }
@@ -74,6 +77,10 @@ header button svg {
     background-image: url("assets/swipeleft.svg");
 }
 
+.carousel-indicators .active {
+    background-color: #786500;
+}
+
 .section2 {
     background-image: url("assets/bgsection2.png");
     background-size: cover;
@@ -87,7 +94,8 @@ header button svg {
 .section3 h1,
 .section4 h1,
 .section6 h1,
-.section7 h1 {
+.section7 h1,
+.kabisection1 {
     font-family: "Kanit";
     font-weight: 700;
     color: #1A237E;
@@ -105,7 +113,9 @@ header button svg {
 .section4 a,
 .section5 a,
 .section6 a,
-.section7 a {
+.section7 a,
+.ausection1 a,
+.kabisection1 {
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
@@ -120,7 +130,9 @@ header button svg {
 .section4 a::after,
 .section5 a::after,
 .section6 a::after,
-.section7 a::after {
+.section7 a::after,
+.ausection1 a::after,
+.kabisection1 a::after {
     --size: 1em;
 
     content: '';
@@ -244,6 +256,10 @@ header button svg {
     gap: 6em;
 }
 
+.section5 .owl-stage-outer {
+    padding-top: 3em;
+}
+
 .section5>div {
     width: 100%;
 }
@@ -276,24 +292,44 @@ header button svg {
 
 
 .section6 {
-    background-color: #FDFDEA;
-    background-size: cover;
-    background-position: center;
+    background: url('./assets/bgsection6.png'), #FDFDEA;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 40% 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 3em;
 }
 
-.section6 img {
-    width: 37rem;
-    height: auto;
-    display: flex;
-    margin-right: 500px;
-    margin-top: 100px;
+.section6>div {
+    margin-bottom: 10em;
 }
 
-.section6 p {
+.section6>section {
+    display: grid;
+    width: 36em;
+    gap: 1em;
+    margin-right: 3em;
+}
+
+.section6>section>div>img {
+    width: 100%;
+    height: auto;
+}
+
+.section6>section>div>p {
+    text-align: center;
+    margin-top: .5em;
+}
+
+.section6>section>div:nth-child(1) {
+    grid-column: 2;
+    grid-row: 1/3;
+    margin-left: 1em;
+}
+
+.section6>div>p {
     width: 37ch;
     padding-top: 3rem;
     font-family: 'Montserrat';
@@ -323,7 +359,7 @@ header button svg {
     display: flex;
 }
 
-.section7 p {
+.section7>div>p {
     width: 40ch;
     margin-left: 3rem;
     padding-top: 1em;
@@ -339,32 +375,136 @@ header button svg {
     margin-top: 2rem;
 }
 
-.articlecard {
+.section7 .row {
+    margin: 0;
+    margin-top: 3em;
+}
+
+.section7 .card-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.section7 .card {
     display: flex;
-    position: absolute;
-    background-color: #C4C4C4;
     flex-direction: column;
-    box-shadow: 0px 101px 227px rgba(0, 0, 0, 0.37), 0px 42.1954px 94.8352px rgba(0, 0, 0, 0.34578), 0px 22.5597px 50.7034px rgba(0, 0, 0, 0.307725), 0px 12.6468px 28.4239px rgba(0, 0, 0, 0.248669), 0px 6.7166px 15.0957px rgba(0, 0, 0, 0.165059), 0px 2.79493px 6.28167px rgba(0, 0, 0, 0.0747247);
+    width: 100%;
+    background-color: #C4C4C4;
+    height: 22em;
+    overflow: hidden;
+    position: relative;
+}
+
+.section7 .card .image img {
+    width: auto;
+    height: 100%;
+}
+
+.section7 .card:hover .hover-info {
+    opacity: 1;
+}
+
+.section7 .card .hover-info {
+    transition: opacity .3s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(133, 133, 133, 0.4);
+    backdrop-filter: blur(3px);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .8em;
+    opacity: 0;
+}
+
+.section7 .card .hover-info h3 {
+    font-size: 1em;
+}
+
+.section7 .card .hover-info p {
+    font-size: .8em;
+    font-weight: 300;
+}
+
+.section7 .card .hover-info span {
+    color: black;
+    font-weight: bold;
+    background-color: #FBFE00;
+    border-radius: 20px;
+    padding: .3em 1em;
+}
+
+.section7 .card-detail {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: .5em .6em;
+}
+
+.section7 .tags {
+    margin-bottom: .5em;
+    font-size: .7em;
+    display: flex;
+    gap: .5em;
+}
+
+.section7 .card-detail .details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section7 .card-detail .details h3 {
+    font-size: .8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section7 .card-detail .details>h3 {
+    font-size: 1em;
+    margin-bottom: auto;
+}
+
+.section7 .tags>div {
+    background: #53A9E0;
+    width: fit-content;
+    padding: .5em .8em;
     border-radius: 20px;
 }
 
-
-.footer {
-    background-color: #F0F0DA;
+.section7 .card-detail-person {
     display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: .5em 1.7em .5em 1em;
+    color: #786500;
     align-items: center;
+    justify-content: space-between;
 }
 
-/* About Us Page */
+.section7 .card-detail-person img {
+    width: 2em;
+    height: 2em;
+}
 
-.ausection1 {
+/* Footer */
+
+
+
+
+
+/* Kabinet Page */
+
+.kabisection1 {
     background-color: #FDFDEA;
+    background-image: url("assets/bgkabinet1.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -373,7 +513,7 @@ header button svg {
     padding: 0 3em;
 }
 
-.ausection1 img {
+.kabisection1 img {
     width: 37rem;
     height: auto;
     display: flex;
@@ -381,9 +521,16 @@ header button svg {
     margin-top: 100px;
 }
 
-.ausection1 p {
+.kabisection1 p {
     width: 37ch;
     padding-top: 3rem;
     font-family: 'Montserrat';
-    color: #000000;
+    color: #FFFFFF;
+}
+
+.kabisection1>div {
+    justify-content: center;
+    font-family: "Kanit";
+    font-weight: 700;
+    color: #FFFFFF;
 }
