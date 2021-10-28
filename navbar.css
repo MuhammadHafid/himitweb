@@ -1,0 +1,138 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  font-family: "Montserrat";
+  color: #000000;
+  background-color: #fdfdea;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 10;
+}
+
+header img {
+  height: 4rem;
+  width: auto;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+header button svg {
+  height: 3rem;
+  position: relative;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+footer {
+  padding: 1.5rem 5rem;
+}
+
+footer iframe {
+  padding-right: 1rem;
+}
+
+footer a {
+  all: unset;
+  cursor: pointer;
+}
+
+footer a:hover {
+  all: unset;
+  cursor: pointer;
+}
+
+footer a svg {
+  vertical-align: text-top;
+  width: 20px;
+}
+
+footer .col-6 a:not(:nth-child(-n + 2)) {
+  margin-left: 1rem;
+}
+
+.dropdown-menu {
+  background-color: rgba(100, 100, 100, 0.5) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  backdrop-filter: blur(24px) !important;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.dropdown-menu a {
+  font-weight: 700;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  color: #1a237e !important;
+}
+
+.ping {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  border: 1px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes ping {
+  75%,
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+#navbardrop {
+  position: relative;
+}
