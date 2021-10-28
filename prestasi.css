@@ -1,0 +1,37 @@
+/*=========Header=========*/
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.5em 1.7em 0.5em 1em;
+  align-items: center;
+  z-index: 10;
+  background-image: url(assets/Galeri/Union.png);
+}
+
+header img {
+  height: 6rem;
+  width: auto;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+header button svg {
+  height: 4rem;
+  width: auto;
+  position: relative;
+}
+header .text {
+  color: white;
+}
+/*===isi galeri====*/
+.menu_container {
+  background-color: #1a237e;
+}

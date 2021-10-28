@@ -1,0 +1,54 @@
+img{
+	max-width: 100%;
+}
+.gallery{
+	background-color: #1A237E;
+	padding: 80px 0;
+}
+.gallery img{
+	background-color: #ffffff;
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+#gallery-modal .modal-img{
+	width: 100%;
+}
+/*=========Header=========*/
+header {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 0.5em 1.7em 0.5em 1em;
+	align-items: center;
+	z-index: 10;
+	background-image: url(assets/Galeri/Union.png);
+	height: 88px;
+	left: 0px;
+	top: 0px;
+  }
+  
+  header img {
+	height: 6rem;
+	width: auto;
+  }
+  
+  header button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+  }
+  
+  header button svg {
+	height: 4rem;
+	width: auto;
+	position: relative;
+  }
+  header .text {
+	color: white;
+  }
+  /*

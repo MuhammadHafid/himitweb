@@ -1,0 +1,74 @@
+body {
+  position: relative;
+  width: 100%;
+}
+/*=========Header=========*/
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.5em 1.7em 0.5em 1em;
+  align-items: center;
+  z-index: 10;
+  background-image: url(assets/Galeri/Union.png);
+  height: 88px;
+  left: 0px;
+  top: 0px;
+}
+
+header img {
+  height: 6rem;
+  width: auto;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+header button svg {
+  height: 4rem;
+  width: auto;
+  position: relative;
+}
+header .text {
+  color: white;
+}
+header .union{
+  width: 100%;
+  background: repeat;
+  height: auto;
+}
+/*
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7e751a" fill-opacity="1" d="M0,64L120,90.7C240,117,480,171,720,165.3C960,160,1200,96,1320,64L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+/*===isi galeri====*/
+.menu_container {
+  padding: 10rem 1rem;
+  background-color: #1A237E;
+}
+
+img{
+  max-width: 100%;
+}
+.gallery{
+  background-color: #1A237E;
+  padding: 80px 0;
+  margin-top: 50px;
+}
+.gallery img{
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.gallery h2{
+  margin-top: 5px;
+  color: white;
+}
+.gallery p{
+  color: white;
+}

@@ -1,0 +1,156 @@
+/*
+	@name cupu_project
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1440px;  margin-left: auto; margin-right: auto;  }
+
+#_bg__desktop___3 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 1024px;
+	background:rgba(249,249,227,1);
+}
+
+
+#kembali {
+	top: 61px;
+	left: 66px;
+	width: 90px;
+	height: 44px;
+	overflow: hidden;
+	font-family: Kanit;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#000000;
+}
+
+
+#september_18__2021 {
+	top: 228px;
+	left: 289px;
+	width: 335px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#1A237E;
+}
+
+
+#karim_benzema {
+	top: 228px;
+	left: 986px;
+	width: 187px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Montserrat;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	color:#1A237E;
+}
+
+
+#instagram_2 {
+	top: 264px;
+	left: 289px;
+	width: 35px;
+	height: 35px;
+}
+
+#linkedin_2 {
+	top: 262px;
+	left: 388px;
+	width: 40px;
+	height: 39px;
+}
+
+#linkedin_1 {
+	top: 0px;
+	left: 0px;
+	width: 40px;
+	height: 39px;
+}
+
+
+#vector {
+	top: 268px;
+	left: 336px;
+	width: 45px;
+	height: 27px;
+}
+
+
+#text {
+	top: 331px;
+	left: 271px;
+	width: 912px;
+	height: 182px;
+	overflow: hidden;
+	font-family: Montserrat;
+	font-size: 20px;
+	text-align: left;
+	color:#000000;
+}
+
+
+#caption{
+	top: 105px;
+	left: 289px;
+	width: 885px;
+	height: 129.5px;
+	overflow: hidden;
+	font-family: Kanit;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: left;
+	color:#1A237E;
+}
+
+
+#image_16 {
+	top: 516px;
+	left: 354px;
+	width: 365px;
+	height: 204px;
+}
+
+
+#image_17 {
+	top: 720px;
+	left: 721px;
+	width: 365px;
+	height: 205px;
+}
+
+
+#image_18 {
+	top: 538px;
+	left: 770px;
+	width: 283px;
+	height: 158px;
+}
+
+
+#image_19 {
+	top: 749px;
+	left: 422px;
+	width: 283px;
+	height: 159px;
+}
+
+
+
+/* Add your custom CSS here */
